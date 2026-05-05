@@ -11,3 +11,8 @@ version
 cover/
 requirements.txt
 *.secret
+
+# Terraform
+.terraform
+.terraform.lock.hcl
+*.tfstate*

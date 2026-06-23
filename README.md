@@ -1,8 +1,8 @@
 # Apptainer operator
 
-[![apptainer charm tests](https://github.com/charmed-hpc/apptainer-operator/actions/workflows/ci.yaml/badge.svg)](https://github.com/charmed-hpc/apptainer-operator/actions/workflows/ci.yaml)
-[![Release to `latest/edge` channel on Charmhub](https://github.com/charmed-hpc/apptainer-operator/actions/workflows/release.yaml/badge.svg)](https://github.com/charmed-hpc/apptainer-operator/actions/workflows/release.yaml)
-![GitHub License](https://img.shields.io/github/license/charmed-hpc/apptainer-operator)
+[![apptainer charm tests](https://github.com/canonical/apptainer-operator/actions/workflows/ci.yaml/badge.svg)](https://github.com/canonical/apptainer-operator/actions/workflows/ci.yaml)
+[![Release to `latest/edge` channel on Charmhub](https://github.com/canonical/apptainer-operator/actions/workflows/release.yaml/badge.svg)](https://github.com/canonical/apptainer-operator/actions/workflows/release.yaml)
+![GitHub License](https://img.shields.io/github/license/canonical/apptainer-operator)
 [![Matrix](https://img.shields.io/matrix/ubuntu-hpc%3Amatrix.org?logo=matrix&label=ubuntu-hpc)](https://matrix.to/#/#hpc:ubuntu.com)
 
 A [Juju](https://juju.is) charm for automating the full lifecycle operations of 
@@ -65,8 +65,7 @@ or have any further questions on what you can do with the operator, here are som
 further resources for you to explore:
 
 * [Charmed HPC documentation](https://canonical-charmed-hpc.readthedocs-hosted.com/latest/)
-* [Open an issue](https://github.com/charmed-hpc/apptainer-operator/issues/new?title=ISSUE+TITLE&body=*Please+describe+your+issue*)
-* [Ask a question on GitHub](https://github.com/orgs/charmed-hpc/discussions/categories/q-a)
+* [Open an issue](https://github.com/canonical/apptainer-operator/issues/new?title=ISSUE+TITLE&body=*Please+describe+your+issue*)
 
 ## 🛠️ Development
 
@@ -103,7 +102,6 @@ Here’s some links to help you get started with joining the community:
 * [Contributing guidelines](./CONTRIBUTING.md)
 * [Join the conversation on Matrix](https://matrix.to/#/#hpc:ubuntu.com)
 * [Get the latest news on Discourse](https://discourse.ubuntu.com/c/hpc/151)
-* [Ask and answer questions on GitHub](https://github.com/orgs/charmed-hpc/discussions/categories/q-a)
 
 ## 📋 License
 

@@ -28,7 +28,7 @@ apptainer          charmed-hpc-controller  localhost/localhost  3.6.7    unsuppo
 
 App        Version  Status  Scale  Charm      Channel        Rev  Exposed  Message
 apptainer  1.3.4    active      1  apptainer                   0  no       
-ubuntu     24.04    active      1  ubuntu     latest/stable   26  no       
+ubuntu     24.04    active      1  ubuntu     latest/stable   26  no        
 
 Unit            Workload  Agent  Machine  Public address  Ports  Message
 ubuntu/0*       active    idle   0        10.196.162.159         
@@ -66,6 +66,7 @@ further resources for you to explore:
 
 * [Charmed HPC documentation](https://canonical-charmed-hpc.readthedocs-hosted.com/latest/)
 * [Open an issue](https://github.com/canonical/apptainer-operator/issues/new?title=ISSUE+TITLE&body=*Please+describe+your+issue*)
+* [Ask a question](https://discourse.ubuntu.com/c/project/hpc/151)
 
 ## 🛠️ Development
 
@@ -94,14 +95,14 @@ If you're interested in contributing, take a look at our [contributing guideline
 
 The Apptainer operator is a project of the [Ubuntu High-Performance Computing community](https://ubuntu.com/community/governance/teams/hpc).
 Interested in contributing bug fixes, patches, documentation, or feedback? Want to join the 
-Ubuntu HPC community? You’ve come to the right place 🤩
+Ubuntu HPC community? You've come to the right place 🤩
 
-Here’s some links to help you get started with joining the community:
+Here's some links to help you get started with joining the community:
 
 * [Ubuntu Code of Conduct](https://ubuntu.com/community/ethos/code-of-conduct)
 * [Contributing guidelines](./CONTRIBUTING.md)
 * [Join the conversation on Matrix](https://matrix.to/#/#hpc:ubuntu.com)
-* [Get the latest news on Discourse](https://discourse.ubuntu.com/c/hpc/151)
+* [Get the latest news or ask and answer questions on the Ubuntu Discourse](https://discourse.ubuntu.com/c/project/hpc/151)
 
 ## 📋 License
 

@@ -8,16 +8,16 @@ HPC project's contributing guide]. After you've gone through the main contributi
 you can use this guide for specific information on contributing to the `apptainer-operator` repository.
 
 Have any questions? Feel free to ask them in the [Ubuntu High-Performance Computing Matrix chat]
-or on [GitHub Discussions].
+or in the [High-Performance Computing category on the Ubuntu Discourse].
 
-[Charmed HPC project's contributing guide]: https://github.com/charmed-hpc/docs/blob/main/CONTRIBUTING.md
+[Charmed HPC project's contributing guide]: https://github.com/canonical/hpc-team/blob/main/CONTRIBUTING.md
 [Ubuntu High-Performance Computing Matrix chat]: https://matrix.to/#/#hpc:ubuntu.com
-[GitHub Discussions]: https://github.com/orgs/charmed-hpc/discussions/categories/support
+[High-Performance Computing category on the Ubuntu Discourse]: https://discourse.ubuntu.com/c/project/hpc/151
 
 ## Hacking on `apptainer-operator`
 
 This repository uses [just](https://github.com/casey/just) and [uv](https://github.com/astral-sh/uv) for development
-which provide some useful commands that will help you while hacking on `slurm-charms`:
+which provide some useful commands that will help you while hacking on `apptainer-operator`:
 
 ```shell
 # Create a development environment
@@ -95,4 +95,3 @@ and you make changes to that file in 2025, update the copyright year in the file
 ```text
 Copyright 2023-2025 Canonical Ltd.
 ```
-

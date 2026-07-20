@@ -5,8 +5,8 @@
 ![GitHub License](https://img.shields.io/github/license/canonical/apptainer-operator)
 [![Matrix](https://img.shields.io/matrix/ubuntu-hpc%3Amatrix.org?logo=matrix&label=ubuntu-hpc)](https://matrix.to/#/#hpc:ubuntu.com)
 
-A [Juju](https://juju.is) charm for automating the full lifecycle operations of 
-[Apptainer](https://apptainer.org), a secure and portable container platform designed 
+A [Juju](https://juju.is) charm for automating the full lifecycle operations of
+[Apptainer](https://apptainer.org), a secure and portable container platform designed
 for ease-of-use on shared systems and high-performance computing (HPC) environments.
 
 ## ✨ Getting Started
@@ -14,7 +14,7 @@ for ease-of-use on shared systems and high-performance computing (HPC) environme
 To deploy the Apptainer operator, you'll need to integrate it with a principal charm:
 
 ```shell
-juju deploy ubuntu --base ubuntu@24.04
+juju deploy ubuntu --base ubuntu@26.04
 juju deploy apptainer --channel edge
 juju integrate apptainer ubuntu
 ```
@@ -27,15 +27,15 @@ Model              Controller              Cloud/Region         Version  SLA    
 apptainer          charmed-hpc-controller  localhost/localhost  3.6.7    unsupported  14:15:39-04:00
 
 App        Version  Status  Scale  Charm      Channel        Rev  Exposed  Message
-apptainer  1.3.4    active      1  apptainer                   0  no       
-ubuntu     24.04    active      1  ubuntu     latest/stable   26  no        
+apptainer  1.3.4    active      1  apptainer                   0  no
+ubuntu     26.04    active      1  ubuntu     latest/stable   26  no
 
 Unit            Workload  Agent  Machine  Public address  Ports  Message
-ubuntu/0*       active    idle   0        10.196.162.159         
-  apptainer/0*  active    idle            10.196.162.159         
+ubuntu/0*       active    idle   0        10.196.162.159
+  apptainer/0*  active    idle            10.196.162.159
 
 Machine  State    Address         Inst id        Base          AZ  Message
-0        started  10.196.162.159  juju-a3584f-0  ubuntu@24.04      Running
+0        started  10.196.162.159  juju-a3584f-0  ubuntu@26.04      Running
 ```
 
 Now you can run container images using Apptainer:
@@ -45,10 +45,10 @@ $ juju ssh apptainer/0 -- apptainer exec docker://ubuntu/python:3.10-22.04 pytho
 juju ssh apptainer/0 -- apptainer exec docker://ubuntu/python:3.10-22.04 python3 --version
 INFO:    Converting OCI blobs to SIF format
 INFO:    Starting build...
-Copying blob 128a37428dc8 done   | 
-Copying blob b3ae6f4616bf done   | 
-Copying blob 9ff6808be1ee done   | 
-Copying config c967a28055 done   | 
+Copying blob 128a37428dc8 done   |
+Copying blob b3ae6f4616bf done   |
+Copying blob 9ff6808be1ee done   |
+Copying config c967a28055 done   |
 Writing manifest to image destination
 2025/06/16 18:21:44  info unpack layer: sha256:128a37428dc8f18a9bdaa585ec0f8ace4561b05fc95eee0102d67e2b1741d224
 2025/06/16 18:21:44  info unpack layer: sha256:9ff6808be1eefee42d64f815a634a35192d0551a8afc1fb0f93dcb876acc8d0b
@@ -94,7 +94,7 @@ If you're interested in contributing, take a look at our [contributing guideline
 ## 🤝 Project and community
 
 The Apptainer operator is a project of the [Ubuntu High-Performance Computing community](https://ubuntu.com/community/governance/teams/hpc).
-Interested in contributing bug fixes, patches, documentation, or feedback? Want to join the 
+Interested in contributing bug fixes, patches, documentation, or feedback? Want to join the
 Ubuntu HPC community? You've come to the right place 🤩
 
 Here's some links to help you get started with joining the community:
@@ -109,6 +109,6 @@ Here's some links to help you get started with joining the community:
 The Apptainer operator is free software, distributed under the Apache Software License, version 2.0.
 See the [Apache-2.0 LICENSE](./LICENSE) file for further details.
 
-Apptainer is both licensed under the BSD 3-Clause License and the LBNL License. 
+Apptainer is both licensed under the BSD 3-Clause License and the LBNL License.
 See the upstream Apptainer [LICENSE](https://github.com/apptainer/apptainer/blob/main/LICENSE.md) file
 for further licensing information about Apptainer.

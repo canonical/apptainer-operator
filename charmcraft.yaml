@@ -35,7 +35,7 @@ assumes:
 
 type: charm
 platforms:
-  ubuntu@24.04:amd64:
+  ubuntu@26.04:amd64:
 
 subordinate: true
 

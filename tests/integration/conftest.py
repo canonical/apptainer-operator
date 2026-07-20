@@ -69,7 +69,7 @@ def pytest_addoption(parser: pytest.Parser) -> None:
     parser.addoption(
         "--base",
         action="store",
-        default="ubuntu@24.04",
+        default="ubuntu@26.04",
         help="the base to deploy the apptainer charm on during the integration tests",
     )
     parser.addoption(

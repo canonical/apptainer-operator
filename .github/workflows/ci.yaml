@@ -20,7 +20,7 @@ on:
 jobs:
   inclusive-naming:
     name: Inclusive naming checks
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -50,7 +50,7 @@ jobs:
 
   lint:
     name: Lint checks
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -65,7 +65,7 @@ jobs:
 
   typecheck:
     name: Static type checks
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -78,7 +78,7 @@ jobs:
 
   unit-test:
     name: Unit tests
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -91,7 +91,7 @@ jobs:
 
   integration-test:
     name: Integration tests (LXD)
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     needs:
       - lint
       - typecheck
@@ -118,4 +118,4 @@ jobs:
           provider: lxd
           juju-channel: 3.6/edge
       - name: Run integration tests
-        run: just integration --base ubuntu@24.04
+        run: just integration --base ubuntu@26.04

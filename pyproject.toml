@@ -17,7 +17,7 @@ name = "apptainer"
 version = "0.0"
 requires-python = ">=3.12"
 dependencies = [
-    "ops ~= 3.0",
+    "ops ~= 3.8",
     "charmlibs-apt ~= 1.0",
     "distro ~= 1.9",
     "charmed-hpc-libs ~= 0.1",
@@ -30,7 +30,7 @@ dependencies = [
 dev = [
     # Testing
     "coverage[toml] ~= 7.8",
-    "ops[testing] ~= 3.0",
+    "ops[testing] ~= 3.8",
     "pytest~=9.0",
     "pytest-mock ~= 3.14",
     "pytest-order ~= 1.3",

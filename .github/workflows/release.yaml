@@ -27,6 +27,8 @@ jobs:
     needs:
       - ci-tests
     runs-on: ubuntu-26.04
+    permissions:
+      contents: write
     steps:
       - name: Remove unnecessary files
         run: |

@@ -14,8 +14,7 @@
 
 name: apptainer
 summary: |
-  Apptainer simplifies the creation and execution of
-  containers, ensuring software components are encapsulated for portability and reproducibility.
+  Charmed operator for the Apptainer container runtime.
 description: |
   This subordinate charm installs the `apptainer` package when integrated
   with a primary charm and removes the package from the system when the
@@ -23,12 +22,20 @@ description: |
 
   Apptainer is installed by this charm from the upstream ppa
   located at https://ppa.launchpadcontent.net/apptainer/ppa/ubuntu.
+
+  The charm is a core component of Charmed HPC. See the following how-to in
+  Charmed HPC's documentation for more information:
+
+  - [How to integrate with Apptainer](https://ubuntu.com/hpc/docs/latest/howto/integrate/integrate-with-apptainer/)
+
+  For more information about Charmed HPC, view the
+  [full documentation](https://ubuntu.com/hpc/docs/latest).
 links:
   contact: https://matrix.to/#/#hpc:ubuntu.com
-  issues:
-  - https://github.com/canonical/apptainer-operator/issues
-  source:
-  - https://github.com/canonical/apptainer-operator
+  documentation: https://ubuntu.com/hpc/docs/latest
+  website: https://ubuntu.com/hpc
+  source: https://github.com/canonical/apptainer-operator
+  issues: https://github.com/canonical/apptainer-operator/issues
 
 assumes:
   - juju

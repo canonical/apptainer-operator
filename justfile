@@ -123,7 +123,7 @@ upgrade:
     uv lock --upgrade
 
 # Generate publishing token for Charmhub
-generate-token:
+generate-charmhub-token:
     charmcraft login \
         --export=.charmhub.secret \
         --charm=apptainer \

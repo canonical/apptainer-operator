@@ -165,12 +165,12 @@ existing file whose copyright year is stale, extend the range (for example,
 ## Build commands
 
 ```bash
-just setup               # Create the uv dev environment (uv sync --extra dev).
-just build               # Pack the charm with charmcraft -v pack.
-just clean               # Remove coverage data, caches, build artifacts, *.charm.
-just lock                # Regenerate uv.lock.
-just upgrade             # Upgrade uv.lock with the latest dependencies.
-just generate-token      # Export a Charmhub release token to .charmhub.secret.
+just setup                    # Create the uv dev environment (uv sync --extra dev).
+just build                    # Pack the charm with charmcraft -v pack.
+just clean                    # Remove coverage data, caches, build artifacts, *.charm.
+just lock                     # Regenerate uv.lock.
+just upgrade                  # Upgrade uv.lock with the latest dependencies.
+just generate-charmhub-token  # Export a Charmhub release token to .charmhub.secret.
 ```
 
 ## Testing

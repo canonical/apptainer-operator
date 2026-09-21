@@ -76,7 +76,6 @@ development, which provides some useful commands that will help you while hackin
 ```shell
 just fmt            # Apply formatting standards to code.
 just lint           # Check code against coding style standards.
-just woke           # Run inclusive naming checks.
 just typecheck      # Run static type checks.
 just unit           # Run unit tests.
 ```

@@ -78,6 +78,7 @@ just fmt            # Apply formatting standards to code.
 just lint           # Check code against coding style standards.
 just typecheck      # Run static type checks.
 just unit           # Run unit tests.
+just build          # Pack the charm with charmcraft.
 ```
 
 To run the Apptainer operator integration tests, you'll need to have both

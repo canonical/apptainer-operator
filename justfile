@@ -93,6 +93,10 @@ test *targets:
 # Run all test suites
 test-all: unit integration
 
+# Build specified artifacts, or all artifacts if none specified
+build *args:
+    charmcraft -v pack {{args}}
+
 # Clean project directory
 clean:
     rm -rf {{project_dir / ".coverage"}}

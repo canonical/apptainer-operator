@@ -19,19 +19,12 @@
 name: Nightly TICS scan
 
 on:
-  schedule:
-    - cron: '16 17 * * THU' # Every Thursday at 17:15 UTC
-  workflow_dispatch:
   push:
     branches:
       - test-tics-workflow
 
-permissions:
-  contents: read
-
 jobs:
-  TICS:
-    uses: canonical/hpc-team/.github/workflows/tics-scan.yaml@test-tics-workflow
-    with:
-      project: apptainer-operator
-    secrets: inherit
+  test:
+    runs-on: ubuntu-26.04
+    steps:
+      - run: echo hello

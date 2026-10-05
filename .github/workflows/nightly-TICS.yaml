@@ -20,7 +20,7 @@ name: Nightly TICS scan
 
 on:
   schedule:
-    - cron: '15 17 * * THU' # Every Thursday at 17:15 UTC
+    - cron: '16 17 * * THU' # Every Thursday at 17:15 UTC
   workflow_dispatch:
   push:
     branches:

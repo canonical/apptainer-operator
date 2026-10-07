@@ -28,3 +28,9 @@ def assert_ssh_output_field(context: Context, field: str, value: str) -> None:
     """Assert a KEY=VALUE field is present in the next `juju ssh` output (LIFO order)."""
     output = context.ssh_results.pop()
     assert f"{field}={value}" in output
+
+
+@then(parsers.parse("the ssh output should contain '{value}'"))
+def assert_ssh_output_contents(context: Context, value: str) -> None:
+    output = context.ssh_results.pop()
+    assert value in output, f"Value '{value}' is not in output '{output}'"

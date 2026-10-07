@@ -1,0 +1,5 @@
+bootstrap: docker
+from: python:3.14
+
+%runscript
+    python -c 'import platform; version = ".".join(platform.python_version_tuple()[:2]); print(f"Hello from Python {version}")'

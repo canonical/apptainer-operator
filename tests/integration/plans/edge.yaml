@@ -27,3 +27,12 @@ scenarios:
     And I ssh into unit 'apptainer/0' and I execute 'apptainer --silent exec docker://alpine:latest cat /etc/os-release'
     Then the ssh output field 'ID' should be 'alpine'
     And the ssh output field 'VERSION_CODENAME' should be 'jammy'
+
+  - |-
+    Build a container and execute its runscript
+
+    Given 'apptainer' is deployed
+    When I copy 'tests/integration/assets/workload.def' to unit 'apptainer/0' at '~/workload.def'
+    And I ssh into unit 'apptainer/0' and I execute 'apptainer build workload.sif workload.def'
+    And I ssh into unit 'apptainer/0' and I execute 'apptainer run workload.sif'
+    Then the ssh output should contain 'Hello from Python 3.14'

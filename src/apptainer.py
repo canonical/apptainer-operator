@@ -33,7 +33,9 @@ class ApptainerManager(AptLifecycleManager):
     """Manage the ``apptainer`` installation of a machine."""
 
     def __init__(self) -> None:
-        super().__init__("apptainer", additional_packages=["fuse2fs", "squashfuse", "gocryptfs"])
+        super().__init__(
+            "apptainer", additional_packages=["fuse2fs", "gocryptfs", "squashfuse", "uidmap"]
+        )
 
         # Remove bindings from `AptLifecycleManager` and use overrides below.
         del self.install

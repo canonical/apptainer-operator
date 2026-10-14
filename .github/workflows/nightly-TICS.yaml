@@ -18,9 +18,6 @@ on:
   schedule:
     - cron: '05 02 * * *' # Every day at 02:05 UTC
   workflow_dispatch:
-  push:
-    branches:
-      - test-tics-workflow
 
 permissions:
   contents: read

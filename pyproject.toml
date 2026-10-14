@@ -30,7 +30,7 @@ dev = [
     "ops[testing] ~= 3.9",
     "pytest~=9.1",
     "pytest-mock ~= 3.16",
-    "pytest-jubilant-bdd ~= 0.17",
+    "pytest-jubilant-bdd ~= 0.18",
 
     # Linting
     "ruff",

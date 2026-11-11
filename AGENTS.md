@@ -36,7 +36,8 @@ The project uses:
 
 - `uv` for dependency management and packaging.
 - `just` as the task runner (see `justfile`).
-- `ruff` for formatting and linting, `codespell` for spell checking.
+- `ruff` for formatting and linting, `codespell` for spell checking,
+  `charmlint` for charm linting.
 - `pyright` for static type checking.
 - `ops` and `charmed-hpc-libs` for charm primitives.
 - `charmed-slurm-oci-runtime-interface` and
@@ -182,7 +183,7 @@ just integration     # Run BDD integration tests (requires Juju and LXD).
 just test            # Run all test suites (unit + integration).
 just test <target>   # Run a specific test target.
 just fmt             # Format with ruff and apply auto-fixes.
-just lint            # codespell + ruff check.
+just lint            # codespell + ruff check + charmlint.
 just typecheck       # Static type checking with pyright.
 ```
 
@@ -245,7 +246,7 @@ the `provides` output (`oci-runtime`) **must** be present in `outputs.tf`.
 3. Run `just unit` — ensure all tests pass and coverage meets the 85% branch
    coverage target.
 4. Format: `just fmt`.
-5. Lint: `just lint` (codespell + ruff). Fix all linter errors.
+5. Lint: `just lint` (codespell, ruff, charmlint). Fix all linter errors.
 6. Typecheck: `just typecheck` (pyright). Fix all typing errors. If a typing
    issue is in production code, follow the human-in-the-loop protocol in the
    Code style section above.

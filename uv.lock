@@ -24,6 +24,7 @@ dependencies = [
 
 [package.optional-dependencies]
 dev = [
+    { name = "charmlint" },
     { name = "codespell" },
     { name = "coverage" },
     { name = "flake8" },
@@ -42,17 +43,18 @@ requires-dist = [
     { name = "charmed-hpc-libs", specifier = "~=0.8" },
     { name = "charmed-slurm-oci-runtime-interface", specifier = "~=1.0" },
     { name = "charmed-slurm-slurmctld-interface", specifier = "~=0.1" },
+    { name = "charmlint", marker = "extra == 'dev'", specifier = ">=0.3.0" },
     { name = "codespell", marker = "extra == 'dev'" },
     { name = "coverage", extras = ["toml"], marker = "extra == 'dev'", specifier = "~=7.16" },
     { name = "flake8", marker = "extra == 'dev'" },
-    { name = "ops", specifier = "~=3.8" },
-    { name = "ops", extras = ["testing"], marker = "extra == 'dev'", specifier = "~=3.8" },
+    { name = "ops", specifier = "~=3.9" },
+    { name = "ops", extras = ["testing"], marker = "extra == 'dev'", specifier = "~=3.9" },
     { name = "pylint", marker = "extra == 'dev'" },
     { name = "pyright", marker = "extra == 'dev'" },
     { name = "pytest", marker = "extra == 'dev'" },
     { name = "pytest", marker = "extra == 'dev'", specifier = "~=9.1" },
-    { name = "pytest-jubilant-bdd", marker = "extra == 'dev'", specifier = "~=0.17" },
-    { name = "pytest-mock", marker = "extra == 'dev'", specifier = "~=3.16" },
+    { name = "pytest-jubilant-bdd", marker = "extra == 'dev'", specifier = "~=0.18" },
+    { name = "pytest-mock", marker = "extra == 'dev'", specifier = "~=3.17" },
     { name = "pyyaml", marker = "extra == 'dev'" },
     { name = "ruff", marker = "extra == 'dev'" },
 ]
@@ -122,6 +124,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/36/ce/23c496b7b54596444a842764b7cd16f3bc2a73eb0fe2db2198961a5d4f1e/charmed_slurm_slurmctld_interface-0.1.0.tar.gz", hash = "sha256:c1d215c410eeac5fa2859f0a7f76aa59806ef951a3fbe03c892b5b8cabb0c8d7", size = 11318, upload-time = "2026-04-10T20:53:42.509Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/83/a0/32c3ea40ad6c1b5237750e4268a310f67d4b0a425e23fec0c870af29ef5c/charmed_slurm_slurmctld_interface-0.1.0-py3-none-any.whl", hash = "sha256:1d9d35b9e04938311d932e1f4c3446f1dd890deb2c0ea761251e0d38f5f819c3", size = 12772, upload-time = "2026-04-10T20:53:41.372Z" },
+]
+
+[[package]]
+name = "charmlint"
+version = "0.3.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyyaml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/17/33/655fc4b6ba0bcf67f0bec73651486c75a013162bed1ad369f60ae7fb6e21/charmlint-0.3.0.tar.gz", hash = "sha256:0300c1aff132b4b45d576f79452987ea9d01087c00ca9cc424ca398dd0724ba3", size = 268082, upload-time = "2026-10-12T23:33:36.83Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/90/c6/770ef51312f60daf735417649fa2f0a6ea88e5151b2740d8b1726a602bdf/charmlint-0.3.0-py3-none-any.whl", hash = "sha256:dee01cce0cb2e640ac76f4221a08effae902e4c92c19655f6ea71a27c73710c7", size = 103116, upload-time = "2026-10-12T23:33:35.339Z" },
 ]
 
 [[package]]
@@ -526,16 +540,16 @@ wheels = [
 
 [[package]]
 name = "ops"
-version = "3.8.3"
+version = "3.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "opentelemetry-api" },
     { name = "pyyaml" },
     { name = "websocket-client" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/53/fb/5028f6db40b58939bd352e1373ebf9e722772c8d0929c4977ddb5e674ea5/ops-3.8.3.tar.gz", hash = "sha256:fd0c474f0c650bc9decfa613578a800931e6cf1ea948c7a59f55aeacfd8e6d4e", size = 612626, upload-time = "2026-10-01T03:11:24.325Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0f/03/d87306f7e704a0f75f461d40d6141bfbd1ea38ba329ca0e88f6c3a20cfd5/ops-3.9.0.tar.gz", hash = "sha256:f8fd7fa05359e9fc057663b1a652602f5803db0b37e1bbfe9b63971c54e4b3b3", size = 420379, upload-time = "2026-10-08T05:36:18.184Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/91/c1/ec795e4a04815d6a1b6d313cf03821f7041f8d68cad365c0534dcf339118/ops-3.8.3-py3-none-any.whl", hash = "sha256:037feb823874da6d700852e1a5c06927077311c939276daaa1b925fd16cbf15b", size = 216166, upload-time = "2026-10-01T03:11:19.978Z" },
+    { url = "https://files.pythonhosted.org/packages/7f/2f/faf83b14fd88c0e5ae26a4f5eb66f06f708fe322223823acfd45f8d32594/ops-3.9.0-py3-none-any.whl", hash = "sha256:2dc7a77edae408886ccd348be590df0e03589dfe5e3e115e238d5746850eed0c", size = 219271, upload-time = "2026-10-08T05:36:14.03Z" },
 ]
 
 [package.optional-dependencies]
@@ -545,16 +559,16 @@ testing = [
 
 [[package]]
 name = "ops-scenario"
-version = "8.8.3"
+version = "8.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ops" },
     { name = "pyyaml" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/be/eb/c67e55e1ae02cf21f1e59fe73352eab3bf0ea25750dcecdff785c4d4c78f/ops_scenario-8.8.3.tar.gz", hash = "sha256:eba556bd3b6266a76c0b5322e4b6ff63e991917148f2d26ba11dfc6c8dfbb6a0", size = 86946, upload-time = "2026-10-01T03:11:25.934Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2c/c7/51b9878f732ffb5363ec34c9a078db3f8fbb691c1fc3d225d959d1f9c6c0/ops_scenario-8.9.0.tar.gz", hash = "sha256:08e4aae5d6306f0a0b772c806d6f72d8238e106459303d2fb9288b72cbcc348f", size = 132424, upload-time = "2026-10-08T05:36:19.545Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3e/aa/5c3aa073ed68c885acd6a94378b5435bfac9de05a02c848e8e05bad2813b/ops_scenario-8.8.3-py3-none-any.whl", hash = "sha256:83ab347c4b3c28de0d3c1e37ff71260cc621746101c2e6603b6a7fb2d3468ad2", size = 74918, upload-time = "2026-10-01T03:11:21.444Z" },
+    { url = "https://files.pythonhosted.org/packages/2b/f8/2c2d655af358c708e49f8bffa0f40b4fa81e84ad9c234372543f143bc737/ops_scenario-8.9.0-py3-none-any.whl", hash = "sha256:a6ff1ed5d0f71b419cf9aa36c85094afbd4fb44bae0567a151634f8d0dde2351", size = 75885, upload-time = "2026-10-08T05:36:15.641Z" },
 ]
 
 [[package]]
@@ -803,14 +817,14 @@ wheels = [
 
 [[package]]
 name = "pytest-mock"
-version = "3.16.0"
+version = "3.17.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pytest" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7a/7f/6ed29931d5c8cd396e7c0a55412e6cc88020373365c8685985dea53d26d7/pytest_mock-3.16.0.tar.gz", hash = "sha256:5a8395528b8f498205f3718f575228d0edaed7425fff638f87d1a6c3e0383636", size = 35362, upload-time = "2026-09-27T14:57:55.46Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/97/c2/28b9f5b955ff2bcd4727a6f768e2ca9b586cd7c37b95ea5f7b9b873ac7b3/pytest_mock-3.17.0.tar.gz", hash = "sha256:e36576e0985e01027e999891e7a966c67822d40c89ef1b4c8b6e22737e3590b4", size = 43064, upload-time = "2026-10-17T16:21:42.435Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/db/5b/b83a9bf1a3b4ec222f9fa083147ff6816245223da0ab92370e7e056f113f/pytest_mock-3.16.0-py3-none-any.whl", hash = "sha256:007cfeb257801d88d9c0b2a7b5a15a15e73b71968dfd72e7bf8c4a2f8393aec8", size = 10016, upload-time = "2026-09-27T14:57:54.283Z" },
+    { url = "https://files.pythonhosted.org/packages/e8/ea/47fbdc8f37410956fd445720e927589b1e2a47772c5f28109f0ce2fa26d9/pytest_mock-3.17.0-py3-none-any.whl", hash = "sha256:1b82aa4b37137248bd687055e109723debeb07b489de1565297dc9589c5f2d6b", size = 11248, upload-time = "2026-10-17T16:21:41.265Z" },
 ]
 
 [[package]]

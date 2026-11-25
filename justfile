@@ -44,6 +44,7 @@ fmt: lock
 lint: lock
     {{uv_run}} codespell {{src_dir}}
     {{uv_run}} ruff check {{src_dir}}
+    {{uv_run}} charmlint .
 
 # Run static type checker on code
 typecheck: lock
